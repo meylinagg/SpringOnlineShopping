@@ -9,9 +9,8 @@
         <title>Welcome to Online Shopping</title>
         <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
     </head>
-
     <body>
-        <jsp:include page="head.jsp"/>
+        <jsp:include page="head.jsp"></jsp:include>
         <div class="container">
             <b>${errMsg}</b>
             <form method="POST" action="${pageContext.request.contextPath}/login/check" modelAttribute="loginBean">
@@ -36,7 +35,7 @@
                             <td><input type="reset" value="Reset" /></td>
                         </tr>
                         <tr>
-                            <td colspan="2"> Yet Not Registered!! <a href="register">Register here</a></td>
+                            <td colspan="2"> Not Yet Registered!! <a href="register">Register here !</a></td>
                         </tr>
                     </tbody>
                 </table>

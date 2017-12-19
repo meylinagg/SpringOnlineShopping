@@ -22,4 +22,11 @@ public class ProductService {
             
         return products;
     }
+    
+    public Product findById(int id){
+        em = emf.createEntityManager();
+        Product product = em.find(Product.class, id);
+        
+        return product;
+    }
 }

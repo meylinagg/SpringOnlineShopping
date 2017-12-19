@@ -51,4 +51,9 @@ public class LoginController {
 
         return "successlogin";
     }
+    @RequestMapping(value = "logout")
+    public String Logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:../welcome";
+    }
 }
